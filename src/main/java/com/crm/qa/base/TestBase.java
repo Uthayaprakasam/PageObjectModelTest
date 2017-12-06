@@ -48,6 +48,10 @@
 				System.setProperty("webdriver.gecko.driver", "D:/Drivers/geckodriver.exe");	
 				driver = new FirefoxDriver(); 
 			}
+			else if(browserName.equals("ie")){
+				System.setProperty("webdriver.ie.driver", "D:/Drivers/IEDriverServer.exe");	
+				driver = new FirefoxDriver(); 
+			}
 			
 			
 			e_driver = new EventFiringWebDriver(driver);
